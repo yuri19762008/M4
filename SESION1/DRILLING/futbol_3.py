@@ -18,7 +18,7 @@ class Personas:
         return f"ID: {self.id}\n Nombre: {self.nombre}\n Apellidos: {self.apellidos}\n Edad: {self.edad}\n"
 
 class Futbolista(Personas):
-    def __init__(self, id, nombre, apellidos, edad, dorsal, demarcacion):
+    def __init__(self, id, nombre, apellidos, edad, dorsal, demarcaciocdn):
         super().__init__(id, nombre, apellidos, edad)
         self.dorsal = dorsal
         self.demarcacion = demarcacion
