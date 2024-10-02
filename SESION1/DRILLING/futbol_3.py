@@ -1,4 +1,4 @@
-class SeleccionFutbol:
+class Personas:
     def __init__(self, id, nombre, apellidos, edad):
         self.id = id
         self.nombre = nombre
@@ -15,9 +15,9 @@ class SeleccionFutbol:
         return "Método entrenamiento debe ser implementado en las clases hijas."
 
     def mostrar_datos(self):
-        return f"ID: {self.id}, Nombre: {self.nombre}, Apellidos: {self.apellidos}, Edad: {self.edad}"
+        return f"ID: {self.id}\n Nombre: {self.nombre}\n Apellidos: {self.apellidos}\n Edad: {self.edad}\n"
 
-class Futbolista(SeleccionFutbol):
+class Futbolista(Personas):
     def __init__(self, id, nombre, apellidos, edad, dorsal, demarcacion):
         super().__init__(id, nombre, apellidos, edad)
         self.dorsal = dorsal
@@ -30,9 +30,9 @@ class Futbolista(SeleccionFutbol):
         return f"{self.nombre} {self.apellidos} está entrenando."
 
     def mostrar_datos(self):
-        return super().mostrar_datos() + f", Dorsal: {self.dorsal}, Demarcación: {self.demarcacion}"
+        return super().mostrar_datos() + f" Dorsal: {self.dorsal}\n Demarcación: {self.demarcacion}"
 
-class Entrenador(SeleccionFutbol):
+class Entrenador(Personas):
     def __init__(self, id, nombre, apellidos, edad, id_federacion):
         super().__init__(id, nombre, apellidos, edad)
         self.id_federacion = id_federacion
@@ -44,9 +44,9 @@ class Entrenador(SeleccionFutbol):
         return f"{self.nombre} {self.apellidos} está dirigiendo un entrenamiento."
 
     def mostrar_datos(self):
-        return super().mostrar_datos() + f", ID Federación: {self.id_federacion}"
+        return super().mostrar_datos() + f" ID Federación: {self.id_federacion}"
 
-class Masajista(SeleccionFutbol):
+class Masajista(Personas):
     def __init__(self, id, nombre, apellidos, edad, titulacion, anios_experiencia):
         super().__init__(id, nombre, apellidos, edad)
         self.titulacion = titulacion
@@ -59,7 +59,7 @@ class Masajista(SeleccionFutbol):
         return f"{self.nombre} {self.apellidos} está asistiendo en el entrenamiento."
 
     def mostrar_datos(self):
-        return super().mostrar_datos() + f", Titulación: {self.titulacion}, Años de experiencia: {self.anios_experiencia}"
+        return super().mostrar_datos() + f" Titulación: {self.titulacion}\n Años de experiencia: {self.anios_experiencia}"
 
 # Ejemplo de uso
 futbolista = Futbolista(1, "Lionel", "Messi", 34, 10, "Delantero")
@@ -71,7 +71,7 @@ integrantes = [futbolista, entrenador, masajista]
 for integrante in integrantes:
     print("Datos del integrante:")
     print(f"{integrante.mostrar_datos()}\n")
-    print(integrante.concentrarse())
-    print(integrante.viajar())
-    print(integrante.entrenamiento())
-    print("---> <---")
+    print(f"{integrante.concentrarse()}\n")
+    print(f"{integrante.viajar()}\n")
+    print(f"{integrante.entrenamiento()}\n")
+    print("---> <---\n")
