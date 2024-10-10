@@ -1,3 +1,5 @@
+# ---> YURI URZUA LEBUY <---
+
 class Persona:
     def __init__(self, nombre, apellido, anno):
         self.nombre = nombre
