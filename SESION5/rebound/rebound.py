@@ -1,3 +1,5 @@
+# ---> YURI URZUA LEBUY <---
+
 # Definición de la clase A
 class A:
     def __init__(self):
