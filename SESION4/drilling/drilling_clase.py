@@ -36,3 +36,5 @@ ciclista.movimiento("deportiva")
 maratonista.movimiento()
 maratonista.movimiento("corriendo")
 maratonista.movimiento("cualquier otra cosa")
+
+print(Ciclista.mro())
