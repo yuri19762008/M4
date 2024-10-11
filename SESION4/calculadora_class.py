@@ -19,7 +19,7 @@ class Multiplicacion(OperacionMatematica):
     def calcular(self, *args):
         resultado = 1
         for num in args:
-            resultado *= num
+            resultado *= num 
         return resultado
 
 class Division(OperacionMatematica):
