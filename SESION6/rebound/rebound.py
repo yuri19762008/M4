@@ -1,3 +1,5 @@
+#---> YURI URZUA <---
+
 # Definición de variables
 suma = 3000
 contador = 0

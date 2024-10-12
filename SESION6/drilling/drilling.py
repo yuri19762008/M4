@@ -1,3 +1,5 @@
+#---> YURI URZUA <---
+
 # Definición del diccionario de usuarios
 usuarios = {'001': 'Mark', '002': 'Monica', '003': 'Jacob'}
 
