@@ -11,7 +11,7 @@ def manejar_archivo():
         try:
             with open(nombre_archivo, 'w') as archivo:
                 for i in range(1, 6):
-                    archivo.write(f"Datos de información en la línea {i}\n")
+                    archivo.write(f"Datos de informacion en la linea {i}\n")
             print(f"El archivo '{nombre_archivo}' ha sido creado exitosamente.")
         except IOError:
             print(f"Error al crear el archivo '{nombre_archivo}'.")
