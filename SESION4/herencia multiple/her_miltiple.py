@@ -1,3 +1,0 @@
-
-
-#herencia multiple
